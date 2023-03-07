@@ -13,7 +13,6 @@ function ReloadPlayerData()
 end
 
 Citizen.CreateThread(function(source, args, rawCommand)
-    --createNPC(GetHashKey(Config.PNJ), vector3(Config.PositionBlanchisseurX,Config.PositionBlanchisseurY,Config.PositionBlanchisseurZ-1), Config.RotationBlanchisseur)
     createNPC(GetHashKey(Config.PNJ), Config.PositionBlanchisseur.pos, Config.PositionBlanchisseur.heading)
 end)
 
